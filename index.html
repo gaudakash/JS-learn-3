@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Can Change HTML Content</title>
+
+    <!--link to cs-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--box containred design -->
+    <div class="Container">
+        <h1>JavaScript can change the style of an HTML element.</h1>
+
+
+        <div class="sub-container">
+        <div class="Box">
+            <h1 id="head">This is Dummy</h1>
+
+            <button type="button" class="btn" onclick="document.getElementById('head').style.fontSize='80px'">Click
+                Me!</button>
+        </div>
+
+        
+
+        <div class="Box">
+            <h1 id="head1">This is Dummy</h1>
+
+            <button type="button" class="btn" onclick="document.getElementById('head1').style.display='none'">Click Me!</button>
+        </div>
+
+        
+
+        <div class="Box">
+            <h1 id="head2" style="display:none">This is Dummy</h1>
+            <button type="button" class="btn" onclick="document.getElementById('head2').style.display='block'">Click Me!</button>
+        </div>
+        </div>
+    </div>
+</body>
+<!--link to js-->
+<script src="main.js"></script>
+
+</html>
